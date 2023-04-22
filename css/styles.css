@@ -74,11 +74,6 @@ button, input {
     text-decoration-color: #efe811;
 }
 
-.greeting {
-    text-decoration: underline;
-    text-decoration-color: #efe811;
-}
-
 /* Navigation Bar CSS */
 .navbar {
     overflow: hidden;
@@ -220,6 +215,8 @@ button, input {
 
 .name-highlight {
     color: #5f55ce;
+    text-decoration: underline;
+    text-decoration-color: #efe811;
 }
 
 .fa-star {
