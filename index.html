@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>WEB222 Final Assessment</title>
+
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"/>
+    <!--Animate CSS-->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
+    <!--Font Awesome CSS-->
+    <script src="https://kit.fontawesome.com/f99fc66560.js" crossorigin="anonymous"></script>
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="./css/styles.css"/>
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="website">
+            <header class="navbar">
+                <nav>
+                    <div class="nav-menu">
+                        <div class="menu">
+                            <ul class="nav-links">
+                                <li class="nav-item"><a class="nav-link" href="#home">HOME</a></li><li class="nav-item"><a class="nav-link" href="#aboutme">ABOUT ME</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#education">EDUCATION</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="menu-icon">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                </nav>
+            </header>
+        <main class="main">
+            <section class="home" id="home">
+                <div class="home-content">
+                    <div class="home-img">
+                        <a href="index.html"><img src="./images/JPEG_20181126_104946.jpg" alt="home-img"></a>
+                    </div>
+                    <div class="home-text">
+                        <h3 class="greeting animate__animated animate__tada">Hello!</h3>
+                        <h2>I'm <span class="name-highlight animate__animated animate__flash">Teresa</span></h2>
+                        <span class="color"><i class="fa-solid fa-star"></i> Full-Stack Web Developer <br><i class="fa-solid fa-star"></i> Software Developer</span><br>
+                    </div>
+                    <div class="home-btns">
+                        <a download="Teresa Tran - Resume.pdf" href="./documents/Teresa Tran - Resume.pdf"><button class="btn"><i class="fa-solid fa-file-arrow-down"></i> RESUME</button></a>
+                        <a href="#contact"><button class="btn"><i class="fa-regular fa-envelope"></i> CONTACT ME</button></a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about" id="aboutme">
+                <h2 class="heading animate__animated animate__rollIn">ABOUT ME</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <span class="abt-span">About Me and Academic Honesty</span>
+                        <p>I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy.
+                        No part of this assessment has been copied manually or electronically from any other source
+                        (including web sites) except for the information supplied by the WEB222 instructors and / or
+                        made available in this assessment for my use. I also declare that no part of this assignment has
+                        been distributed to other students.</p>
+                        <span><strong>Date: </strong></span><p>April 21, 2023</p>
+                    </div>
+                    <div class="about-details">
+                        <span class="abt-span">Basic Information</span>
+                        <pre><strong>AGE:</strong>              27</pre>
+                        <pre><strong>EMAIL:</strong>            ttran101@myseneca.ca</pre>
+                        <pre><strong>LANGUAGE:</strong>         English, Vietnamese</pre>
+                        <pre><strong>CLASS SECTION:</strong>    NDD</pre>
+                        <pre><strong>STUDENT ID:</strong>       108128182</pre>
+                        <pre><strong>INSTRUCTOR:</strong>       Mr. Mark Meritt</pre>
+                    </div>
+                </div>
+            </section>
+
+            <section class="education" id="education">
+                <h2 class="heading animate__animated animate__rollIn">EDUCATION</h2>
+                <div class="container">
+                <div class="education-box animate__animated animate__backInLeft">
+                    <i class="fa-solid fa-school-flag"></i>
+                    <h2>Honours Co-operative Biochemistry<br><br>UNIVERSITY OF WATERLOO</h2>
+                    <p>September 2014 - April 2018</p>
+                </div>
+                <div class="education-box animate__animated animate__backInLeft animate__delay-1s">
+                    <i class="fa-solid fa-school-flag"></i>
+                    <h2>Veterinary Technician (VTE)<br><br>SENECA COLLEGE</h2>
+                    <p>September 2018 - April 2020</p>
+                </div>
+                <div class="education-box animate__animated animate__backInLeft animate__delay-2s">
+                    <i class="fa-solid fa-school-flag"></i>
+                    <h2>Computer Programming and Analysis (CPA)<br><br>SENECA COLLEGE</h2>
+                    <p>September 2022 - April 2025</p>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2 class="heading animate__animated animate__rollIn">CONTACT ME</h2>
+            <div class="contact-content">
+                <form action="https://httpbin.org/post" class="contact-form" id="contact-form" method="POST">
+
+                <!--Name Input-->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Full Name" class="name format">
+
+                <!--Email Input-->
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" placeholder="Email Address" class="email format">
+
+                <!--Address Input-->
+                <label for="address">Address:</label>
+                <textarea name="address" id="address" cols="30" rows="2" placeholder="Address" class="address"></textarea>
+
+                <!--List for Cities in Canada-->
+                <label for="name">City:</label>
+                        <input class="format" type="text" id="city" name="city" list="suggestions" placeholder="City Name"/>
+                        <datalist id="suggestions">
+                            <option label="Abbotsford" value="Abbotsford"></option>
+                            <option label="Barrie" value="Barrie"></option>
+                            <option label="Brantford" value="Brantford"></option>
+                            <option label="Calgary" value="Calgary"></option>
+                            <option label="Edmonton" value="Edmonton"></option>
+                            <option label="Guelph" value="Guelph"></option>
+                            <option label="Halifax" value="Halifax"></option>
+                            <option label="Hamilton" value="Hamilton"></option>
+                            <option label="London" value="London"></option>
+                            <option label="Kanata" value="Kanata"></option>
+                            <option label="Kelowna" value="Kelowna"></option>
+                            <option label="Kingston" value="Kingston"></option>
+                            <option label="Kitchener" value="Kitchener"></option>
+                            <option label="Oshawa" value="Oshawa"></option>
+                            <option label="Ottawa" value="Ottawa"></option>
+                            <option label="Milton" value="Milton"></option>
+                            <option label="Montreal" value="Montreal"></option>
+                            <option label="Quebec City" value="Quebec City"></option>
+                            <option label="Regina" value="Regina"></option>
+                            <option label="Scarborough" value="Scarborough"></option>
+                            <option label="Saskatoon" value="Saskatoon"></option>
+                            <option label="St. John's" value="St. John's"></option>
+                            <option label="St. Catharines" value="St. Catharines"></option>
+                            <option label="Toronto" value="Toronto"></option>
+                            <option label="Thunder Bay" value="Thunder Bay"></option>
+                            <option label="Vancouver" value="Vancouver"></option>
+                            <option label="Victoria" value="Victoria"></option>
+                            <option label="Whitehorse" value="Whitehorse"></option>
+                            <option label="Windsor" value="Windsor"></option>
+                            <option label="Winnipeg" value="Winnipeg"></option>
+                            <option label="Yellowknife" value="Yellowknife"></option>
+                        </datalist>
+
+                <!--Postal Code Input-->
+                <label for="postalCode">Postal Code:</label>
+                <input name="postalCode" type="text" id="postalCode" class="format" placeholder="Postal Code">
+
+                <!--Radio Button Options-->
+                 <br>
+                        <div class="radio-btns">
+                            <label for="purpose">What is the purpose of this message?</label><br><br>
+                            <input type="radio" id="question" name="purpose" value="Question">
+                            <label for="question">Question</label><br>
+                            <input type="radio" id="comment" name="purpose" value="Comment">
+                            <label for="comment">Comment</label><br>
+                            <input type="radio" id="hiring" name="purpose" value="Hiring">
+                            <label for="hiring">Hiring</label>
+                        </div>
+                        <br>
+                <!--Message-->
+                <label for="message">Message:</label>
+                        <textarea name="message" id="message" cols="30" rows="5" placeholder="Enter message body" class="address"></textarea>
+                <!--Field of Work-->
+                 <label for="field">Field of Work:</label>
+                        <select name="field" id="field" size=5>
+                            <option value="Administration, business, & management">Administration, Business, & Management</option>
+                            <option value="Agriculture, Food, & Natural Resources">Agriculture, Food, & Natural Resources</option>
+                            <option value="Arts & Entertainment">Arts & Entertainment</option>
+                            <option value="Business, Management, & Administration">Business, Management, & Administration</option>
+                            <option value="Communications">Communications</option>
+                            <option value="Community & Social Services">Community & Social Services</option>
+                            <option value="Engineering & Architecture">Engineering & Architecture</option>
+                            <option value="Education">Education</option>
+                            <option value="Health & Medicine">Health & Medicine</option>
+                            <option value="Law & Public Policy">Law & Public Policy</option>
+                            <option value="Science and technology">Science & Technology</option>
+                            <option value="Other">Other</option>
+                         </select>                       
+
+                        <!-- Buttons -->
+                        <div class="form-btns">
+                            <input type="submit" value="Send" class="btn">
+                            <input type="reset" value="Clear" class="btn">
+                        </div>
+                        <div id="error"></div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+    <footer class="footer">
+        <h4>Teresa Tran</h4>
+        <p>This website was created for my Final Assessment for WEB222.<br><span>Copyright&copy; 2023</span>
+        </p> 
+    </footer>
+    </div>
+    <!--Javascript-->
+    <script src="./js/script.js"></script>
+    </body>
+    </html>
